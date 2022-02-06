@@ -1,0 +1,22 @@
+{
+  "author": "Keven Leone <keven.leone@liferay.com>",
+  "description": "A Probot app",
+  "dependencies": {
+    "probot": "^12.2.1"
+  },
+  "devDependencies": {
+    "nock": "^13.0.5",
+    "smee-client": "^1.2.2"
+  },
+  "license": "ISC",
+  "name": "solutions-probot",
+  "private": true,
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "dev": "nodemon",
+    "start": "probot run ./lib/index.js",
+    "test": "jest"
+  },
+  "version": "1.0.0"
+}

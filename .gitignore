@@ -1,0 +1,5 @@
+packages/**/node_modules
+packages/**/lib
+packages/**/.env
+packages/**/build
+node_modules
