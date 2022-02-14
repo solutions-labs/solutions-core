@@ -5,6 +5,9 @@
 
 import Express from "express";
 import dotenv from "dotenv";
+import path from "path";
+import hbs from "express-hbs";
+import router from "./router";
 
 dotenv.config();
 
@@ -14,10 +17,29 @@ class App {
   constructor() {
     this.express = Express();
     this.initializeMiddlewares();
+    this.initializeRouter();
   }
 
   private initializeMiddlewares(): void {
     this.express.use(Express.json());
+
+    this.express.use(Express.static(path.resolve(__dirname, "public")));
+
+    this.express.engine(
+      "hbs",
+      hbs.express4({
+        partialsDir: __dirname + "/views/partials",
+        defaultLayout: __dirname + "/views/layout/default.hbs",
+        layoutsDir: __dirname + "/views/layout",
+      })
+    );
+
+    this.express.set("view engine", "hbs");
+    this.express.set("views", __dirname + "/views");
+  }
+
+  private initializeRouter(): void {
+    this.express.use(router);
   }
 
   public listen(): void {

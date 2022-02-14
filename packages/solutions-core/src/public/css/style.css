@@ -1,0 +1,26 @@
+body {
+  background-color: #fafafa;
+}
+
+.project-preview {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.sheet {
+  margin: 20px 0 !important;
+}
+
+.sheet.active {
+  border-left: 5px solid green;
+}
+
+.sheet.disable {
+  border-left: 5px solid red;
+}
+
+.sheet.unactive {
+  border-left: 5px solid gray;
+}

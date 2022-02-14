@@ -6,7 +6,7 @@
   "author": "Keven Leone <keven.leone@liferay.com>",
   "license": "MIT",
   "workspaces": [
-    "packages/**"
+    "packages/solutions-**"
   ],
   "devDependencies": {
     "@types/node": "^17.0.15",

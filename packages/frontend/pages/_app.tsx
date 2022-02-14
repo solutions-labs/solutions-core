@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { MantineProvider, NormalizeCSS, GlobalStyles } from "@mantine/core";
 import { NotificationsProvider } from "@mantine/notifications";
+import Demo from "../components/Sidebar";
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -25,6 +26,7 @@ export default function App(props: AppProps) {
         <NormalizeCSS />
         <GlobalStyles />
         <NotificationsProvider>
+          <Demo></Demo>
           <Component {...pageProps} />
         </NotificationsProvider>
       </MantineProvider>
