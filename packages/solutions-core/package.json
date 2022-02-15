@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
+    "start": "ts-node src/index.ts",
     "build": "tsc",
     "watch": "tsc --watch"
   },
@@ -13,8 +14,7 @@
     "bullmq": "^1.68.4",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
-    "express-hbs": "^2.4.0",
-    "probot": "^12.2.1"
+    "express-hbs": "^2.4.0"
   },
   "devDependencies": {
     "smee-client": "^1.2.2"
