@@ -6,14 +6,13 @@
     {{/contentFor}}
 
     <div class="container mt-5">
-        <h1>Project Detail: {{project.name}}</h1>
         <div class="sheet {{project.status}}">
             <div class="row">
                 <div class="col-7">
                     <div class="sheet-header">
                         <a class="sheet-title" href="/{{project.slug}}">{{project.name}}</a>
-                        <div class="sheet-text">{{project.description}}</div>
-                        <div class="sheet-text">{{project.address}}</div>
+                        <a target="_blank" href="{{project.address}}">{{project.address}}</a>
+                        <div class="sheet-text mt-2">{{project.description}}</div>
                     </div>
                     <div class="sheet-section">
                         <p>Overall uptime: 100.00%</p>
@@ -22,7 +21,9 @@
 
                 </div>
                 <div class="col">
+                    {{#if project.image}}
                     <img class="project-preview" src="/images/{{project.image}}" />
+                    {{/if}}
                 </div>
             </div>
         </div>

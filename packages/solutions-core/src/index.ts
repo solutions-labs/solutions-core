@@ -28,7 +28,6 @@ class App {
     this.express.engine(
       "hbs",
       hbs.express4({
-        partialsDir: __dirname + "/views/partials",
         defaultLayout: __dirname + "/views/layout/default.hbs",
         layoutsDir: __dirname + "/views/layout",
       })

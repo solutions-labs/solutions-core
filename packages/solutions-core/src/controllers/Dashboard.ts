@@ -36,7 +36,7 @@ const projects = [
 ];
 
 class Dashboard {
-  index(_request: Request, response: Response) {
+  async index(_request: Request, response: Response) {
     response.render("index", {
       title: "Solutions Dashboard",
       projects,
@@ -48,7 +48,7 @@ class Dashboard {
 
     response.render("project", {
       slug,
-      project: projects[0],
+      project: projects.find((project) => project.slug === slug) || projects[0],
     });
   }
 }
