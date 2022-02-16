@@ -1,0 +1,33 @@
+[
+  {
+    "address": "http://192.168.109.239:9090",
+    "description": "Liferay DXP",
+    "slug": "",
+    "name": "Liferay DXP Master",
+    "status": "active"
+  },
+  {
+    "address": "http://192.168.109.239:8081",
+    "description": "Testray Running on Liferay Portal 7.0.x",
+    "image": "customer-portal.png",
+    "slug": "",
+    "name": "Testray 7.0.x",
+    "status": "active"
+  },
+  {
+    "address": "http://localhost:8080",
+    "description": "New Testray Running on Liferay Portal 7.4x",
+    "image": "testray.png",
+    "slug": "testray74x",
+    "name": "Solutions Testray 7.4x",
+    "status": "disable"
+  },
+  {
+    "address": "http://localhost:8080",
+    "description": "New Testray Running on Liferay Portal 7.4x",
+    "image": "testray.png",
+    "slug": "testray70x",
+    "name": "Liferay Testray 7.0x",
+    "status": "active"
+  }
+]

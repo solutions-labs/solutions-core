@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "start": "ts-node src/index.ts",
-    "build": "tsc",
+    "build": "./build.sh",
     "watch": "tsc --watch"
   },
   "dependencies": {
@@ -15,8 +15,5 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "express-hbs": "^2.4.0"
-  },
-  "devDependencies": {
-    "smee-client": "^1.2.2"
   }
 }
