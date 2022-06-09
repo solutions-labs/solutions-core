@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prod": "pm2 start lib/src/index.js",
     "dev": "nodemon",
     "start": "ts-node src/index.ts",
     "build": "./build.sh",
@@ -11,9 +12,9 @@
   },
   "dependencies": {
     "axios": "^0.26.0",
-    "bullmq": "^1.68.4",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
-    "express-hbs": "^2.4.0"
+    "express-hbs": "^2.4.0",
+    "pm2": "^5.2.0"
   }
 }
