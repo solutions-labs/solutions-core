@@ -1,0 +1,6 @@
+{
+  "port": 8082,
+  "label": "Testray",
+  "name": "testray",
+  "featureFlags": ["LPS-123456"]
+}

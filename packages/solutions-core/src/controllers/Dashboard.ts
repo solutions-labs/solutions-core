@@ -6,8 +6,6 @@ const FIVE_SECONDS = 5000;
 
 class Dashboard {
   async index(_request: Request, response: Response) {
-    const responsex = await axios.get("http://192.168.109.239:8081");
-
     const projectsPromise = (projects as { address: string }[]).map((project) =>
       axios.get(project.address, { timeout: FIVE_SECONDS })
     );
@@ -25,10 +23,6 @@ class Dashboard {
 
       projects[index].status = "unactive";
     });
-
-    results;
-
-    console.log(responsex.status);
 
     response.render("index", {
       title: "Solutions Dashboard",
